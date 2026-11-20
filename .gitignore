@@ -32,3 +32,4 @@ denylist.txt
 *.safetensors
 
 # Note: .agentic/ is deliberately NOT ignored. It is the project's memory.
+*.tsbuildinfo

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Infrastructure: adapters for the Application ports (readers, extractor, stores, queue, audit, outbox). -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Agentic.Blocks.Audit" Version="0.1.0" />
+    <PackageReference Include="Agentic.Blocks.Outbox" Version="0.1.0" />
+    <ProjectReference Include="../Clio.Application/Clio.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Clio.Tests" />
+  </ItemGroup>
+</Project>

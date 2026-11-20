@@ -1,4 +1,4 @@
-# Termsheet Reader: project map
+# Clio: project map
 
 | Question | File |
 |---|---|

@@ -1,0 +1,104 @@
+[
+  {
+    "file": "01-kestrel-bay.txt",
+    "loanAmount": "ZAR 48500000.00",
+    "margin": "2.85",
+    "maturity": "2031-06-30"
+  },
+  {
+    "file": "02-amberfield.pdf",
+    "loanAmount": "USD 3000000.00",
+    "margin": "3.10",
+    "maturity": "2030-03-31"
+  },
+  {
+    "file": "03-quillon.txt",
+    "loanAmount": "ZAR 120000000.00",
+    "margin": "2.45",
+    "maturity": "2029-09-15"
+  },
+  {
+    "file": "04-marula.txt",
+    "loanAmount": "ZAR 8400000.00",
+    "margin": "4.00",
+    "maturity": "2028-12-01"
+  },
+  {
+    "file": "05-tidewater.txt",
+    "loanAmount": "EUR 2250000.00",
+    "margin": "3.50",
+    "maturity": null
+  },
+  {
+    "file": "06-silverbank.txt",
+    "loanAmount": "ZAR 22000000.00",
+    "margin": "2.40",
+    "maturity": "2032-03-31"
+  },
+  {
+    "file": "07-oakhaven.txt",
+    "loanAmount": "ZAR 15000000.00",
+    "margin": "2.60",
+    "maturity": "2030-02-28"
+  },
+  {
+    "file": "08-blue-crane.pdf",
+    "loanAmount": "ZAR 310000000.00",
+    "margin": "3.40",
+    "maturity": "2038-11-30"
+  },
+  {
+    "file": "09-granite-peak.txt",
+    "loanAmount": "ZAR 64000000.00",
+    "margin": "2.25",
+    "maturity": "2031-11-30"
+  },
+  {
+    "file": "10-fynbos.txt",
+    "loanAmount": "ZAR 18750000.00",
+    "margin": "2.50",
+    "maturity": "2030-05-31"
+  },
+  {
+    "file": "11-ironwood.txt",
+    "loanAmount": "ZAR 35000000.00",
+    "margin": "3.00",
+    "maturity": "2031-04-30"
+  },
+  {
+    "file": "12-northgate.pdf",
+    "loanAmount": "GBP 5750000.00",
+    "margin": "3.75",
+    "maturity": "2027-09-30"
+  },
+  {
+    "file": "13-karoo-wind.txt",
+    "loanAmount": "ZAR 250000000.00",
+    "margin": "1.95",
+    "maturity": "2033-01-31"
+  },
+  {
+    "file": "14-harbour-mill.txt",
+    "loanAmount": "ZAR 6000000.00",
+    "margin": "3.20",
+    "maturity": "2019-06-30"
+  },
+  {
+    "file": "15-redwood.txt",
+    "loanAmount": "USD 12000000.00",
+    "margin": "3.25",
+    "maturity": "2031-06-30"
+  },
+  {
+    "file": "16-baobab.txt",
+    "loanAmount": "ZAR 9500000.00",
+    "margin": null,
+    "maturity": "2029-08-31"
+  },
+  {
+    "file": "17-saltpan.txt",
+    "loanAmount": "ZAR 9999500.50",
+    "margin": "5.125",
+    "maturity": "2030-03-15"
+  }
+]

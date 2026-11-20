@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Domain: entities and rules. Only the BCL and the Core shared kernel (Result, Error, Money). -->
+  <ItemGroup>
+    <PackageReference Include="Agentic.Blocks.Core" Version="0.1.0" />
+  </ItemGroup>
+</Project>

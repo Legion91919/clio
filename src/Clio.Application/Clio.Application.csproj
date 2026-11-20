@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Application: use cases and ports. Depends inwards on Domain only. -->
+  <ItemGroup>
+    <ProjectReference Include="../Clio.Domain/Clio.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Clio.Tests" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+TERM SHEET
+Borrower               Granite Peak Quarries
+Facility amount        ZAR 64 000 000
+Margin                 2.25%
+Maturity date          2031-11-30

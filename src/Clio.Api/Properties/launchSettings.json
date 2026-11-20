@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Clio.Api": {
+      "commandName": "Project",
+      "applicationUrl": "http://localhost:5201",
+      "environmentVariables": { "ASPNETCORE_ENVIRONMENT": "Development" }
+    }
+  }
+}

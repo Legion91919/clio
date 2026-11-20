@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <OutputType>Library</OutputType>
+    <!-- Test names use underscores (Given_When_Then); async tests may not ConfigureAwait. -->
+    <NoWarn>$(NoWarn);CA1707;CA2007;CA1515;CA1861;CA2234;CA1062</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageReference Include="Agentic.Blocks.Testing" Version="0.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Clio.Domain/Clio.Domain.csproj" />
+    <ProjectReference Include="../../src/Clio.Application/Clio.Application.csproj" />
+    <ProjectReference Include="../../src/Clio.Infrastructure/Clio.Infrastructure.csproj" />
+    <ProjectReference Include="../../src/Clio.Api/Clio.Api.csproj" />
+  </ItemGroup>
+</Project>

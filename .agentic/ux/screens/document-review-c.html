@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Variant C: review queue</title><style>:root{--color-bg:#f7f6f2;--color-surface:#ffffff;--color-surface-alt:#eef1f0;--color-border:#d5dad8;--color-text:#17212b;--color-muted:#4f5b66;--color-accent:#0b6466;--color-accent-ink:#ffffff;--color-accent-soft:#dcefee;--color-warn:#8a4b00;--color-warn-soft:#fdf0dc;--color-danger:#a8231c;--color-danger-soft:#fbe6e4;--color-success:#25703a;--color-success-soft:#e2f2e6;--color-highlight:#fff3b0;--font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--font-mono:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;--font-sm:13px;--font-md:15px;--font-lg:19px;--font-xl:26px;--space-xs:4px;--space-sm:8px;--space-md:16px;--space-lg:24px;--space-xl:40px;--radius-sm:4px;--radius-md:8px}
+*{box-sizing:border-box}body{margin:0;font-family:var(--font-family);font-size:var(--font-md);color:var(--color-text);background:var(--color-bg)}
+.num{font-variant-numeric:tabular-nums}.muted{color:var(--color-muted)}
+.mark{display:inline-flex;align-items:center;gap:var(--space-sm);font-weight:600}
+.mark i{width:22px;height:22px;border-radius:var(--radius-sm);background:var(--color-accent);display:inline-block;position:relative}
+.mark i::after{content:"";position:absolute;left:5px;right:5px;top:6px;height:2px;background:#fff;box-shadow:0 4px 0 #fff,0 8px 0 #fff}
+.pill{display:inline-block;padding:2px var(--space-sm);border-radius:999px;font-size:var(--font-sm);font-weight:600}
+.pill.ok{background:var(--color-success-soft);color:var(--color-success)}.pill.rev{background:var(--color-warn-soft);color:var(--color-warn)}.pill.bad{background:var(--color-danger-soft);color:var(--color-danger)}.pill.appr{background:var(--color-accent-soft);color:var(--color-accent)}
+button{font:inherit;cursor:pointer;border-radius:var(--radius-sm);border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);padding:var(--space-xs) var(--space-md)}
+button.primary{background:var(--color-accent);color:var(--color-accent-ink);border-color:var(--color-accent)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--color-accent);outline-offset:2px}
+a{color:var(--color-accent)}
+.page{font-family:var(--font-mono);font-size:var(--font-sm);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-md);line-height:1.7}
+.page ol{margin:0;padding-left:3ch}.page li.hit{background:var(--color-highlight);outline:1px solid var(--color-warn)}
+header{padding:var(--space-sm) var(--space-lg);background:var(--color-accent);color:var(--color-accent-ink);display:flex;justify-content:space-between}
+header .mark i{background:#fff}header .mark i::after{background:var(--color-accent);box-shadow:0 4px 0 var(--color-accent),0 8px 0 var(--color-accent)}
+.q{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);padding:var(--space-lg);max-width:1280px;margin:0 auto}
+.task{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-lg)}
+label{display:block;font-weight:600;margin:var(--space-md) 0 var(--space-xs)}input{font:inherit;padding:var(--space-sm);width:100%;border:1px solid var(--color-border);border-radius:var(--radius-sm)}
+.progress{font-size:var(--font-sm)}
+@media(max-width:800px){.q{grid-template-columns:1fr}}
+</style></head><body>
+<header><span class="mark"><i></i>Review queue</span><span class="progress num">4 fields need review · 3 documents</span></header>
+<div class="q"><section class="task"><p class="muted">Field 1 of 4 · TS-Kestrel-Bay-Logistics.pdf</p><h1 style="font-size:var(--font-lg)">Margin</h1>
+<p>The reader found <strong class="num">2.85%</strong> with <strong class="num">72%</strong> confidence on page 1, line 12.</p>
+<label for="v">Value to save</label><input id="v" class="num" value="2.85">
+<p style="display:flex;gap:var(--space-sm);margin-top:var(--space-lg)"><button class="primary">Approve and next</button><button>Skip</button></p>
+<p class="muted">Your name and the time are recorded with the approval.</p></section>
+<section><div class="page"><ol><li>INDICATIVE TERM SHEET</li><li>Borrower: Kestrel Bay Logistics (Pty) Ltd</li><li>Facility: Senior secured term loan</li><li>Arranger: Harbourline Lending</li><li></li><li>Key terms</li><li>Facility Amount: ZAR 48,500,000</li><li>Purpose: fleet renewal</li><li>Base rate: 3-month JIBAR</li><li>Repayment: quarterly</li><li></li><li class="hit">Pricing: JIBAR plus 285 basis points</li></ol></div></section></div>
+</body></html>
