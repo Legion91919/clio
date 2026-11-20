@@ -3,6 +3,16 @@
 Clio extracts loan terms from term sheets for Harbourline Lending's credit analysts (Harbourline is fictional; all data is invented).
 Analysts used to copy terms out of scanned term sheets by hand, which delayed screening by days and caused keying errors.
 
+## See it in action
+
+![Clio walkthrough: an analyst signs in, uploads an invented term sheet, sees loan amount, margin and maturity extracted with confidence scores and source lines, then approves the low-confidence step-up margin from the review queue](docs/media/demo.gif)
+
+| Fields with confidence and source | Review queue | Approved by the analyst |
+|---|---|---|
+| ![Extracted fields with confidence and page and line links, source line highlighted](docs/media/extracted.png) | ![Review queue listing the step-up margin at 0.60 confidence](docs/media/review-queue.png) | ![Margin marked Approved by you with the source line highlighted](docs/media/approved.png) |
+
+Full-quality video: [docs/media/demo.mp4](docs/media/demo.mp4). Recorded from the running app with `demo/` (`cd demo && npm install && npm run record`).
+
 ## Design at a glance
 Upload a term sheet; Clio proposes **loan amount, margin and maturity**, each with a confidence and the page and line it came from.
 Values at or above 0.90 are saved; the rest wait in a review queue, and every approval records who approved it in a tamper-evident audit log.

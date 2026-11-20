@@ -21,8 +21,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, .link:focus-visible 
 input { font: inherit; padding: var(--space-xs) var(--space-sm); border: 1px solid var(--color-border); border-radius: var(--radius-sm); }
 header.top { display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) var(--space-lg); background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
 .mark { display: inline-flex; align-items: center; gap: var(--space-sm); font-weight: 600; }
-main.layout { display: grid; grid-template-columns: 300px 1fr; gap: var(--space-md); padding: var(--space-md); max-width: 1440px; margin: 0 auto; }
-.detail { display: grid; grid-template-columns: 1fr 380px; gap: var(--space-md); }
+main.layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: var(--space-md); padding: var(--space-md); max-width: 1440px; margin: 0 auto; }
+.detail { display: grid; grid-template-columns: minmax(min-content, 1fr) minmax(0, 380px); gap: var(--space-md); }
+/* Grid children may shrink below their content width; wide content scrolls inside its own panel, never the page. */
+main.layout > *, .detail > * { min-width: 0; }
+.detail > :first-child { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; background: var(--color-surface); font-size: var(--font-sm); }
 th, td { text-align: left; padding: 6px var(--space-sm); border-bottom: 1px solid var(--color-border); vertical-align: top; }
 th { color: var(--color-muted); font-weight: 600; }
@@ -40,8 +43,9 @@ tr.clickable { cursor: pointer; }
 .skel { height: 14px; background: var(--color-surface-alt); border-radius: 3px; margin: 8px 0; }
 .page { font-family: var(--font-mono); font-size: var(--font-sm); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-md); line-height: 1.7; overflow-x: auto; }
 .page ol { margin: 0; padding-left: 4ch; }
+.page li { white-space: pre-wrap; overflow-wrap: anywhere; }
 .page li.hit { background: var(--color-highlight); outline: 1px solid var(--color-warn); }
 input.edit { width: 16ch; text-align: right; }
 .note { font-size: 12px; color: var(--color-muted); }
 .login { max-width: 360px; margin: 10vh auto; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-lg); display: grid; gap: var(--space-sm); }
-@media (max-width: 900px) { main.layout, .detail { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { main.layout, .detail { grid-template-columns: minmax(0, 1fr); } }

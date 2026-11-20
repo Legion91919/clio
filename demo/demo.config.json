@@ -1,0 +1,8 @@
+{
+  "start": [
+    { "name": "api", "cmd": "dotnet run --project src/Clio.Api --no-build", "env": { "ASPNETCORE_ENVIRONMENT": "Development", "ASPNETCORE_URLS": "http://localhost:5201", "Demo__Password": "local-demo-only-pw" }, "ready": "http://localhost:5201/health/ready" },
+    { "name": "web", "cmd": "npm run dev -- --port 6201 --strictPort", "cwd": "web", "ready": "http://localhost:6201" }
+  ],
+  "url": "http://localhost:6201",
+  "viewport": { "width": 1280, "height": 800 }
+}
