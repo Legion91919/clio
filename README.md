@@ -22,6 +22,19 @@ flowchart LR
   api -->|outbox: terms.captured.v1| screening[Credit screening]
 ```
 
+
+## Run it in GitHub Codespaces
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Legion91919/clio?quickstart=1)
+
+The dev container installs the SDKs, restores packages and runs every test once on first start. The same setup works locally with VS Code's Dev Containers extension.
+
+| What | Command | Port |
+|---|---|---|
+| API (Clio) | `ASPNETCORE_ENVIRONMENT=Development ASPNETCORE_URLS=http://0.0.0.0:5201 dotnet run --project src/Clio.Api` | 5201 |
+| Web app | `cd web && npm run dev` | 5173 |
+| All tests (same as CI) | `scripts/test-all.sh` | - |
+
 ## What it does (slice 1)
 - `POST /api/documents`: text-layer PDF, `.txt` or `.md` (10 MB max). Same file twice returns the same document.
 - Fields with value, confidence, source page/line, status (auto-accepted, needs review, approved by).
